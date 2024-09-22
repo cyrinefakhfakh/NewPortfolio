@@ -123,7 +123,9 @@ section{
 .info-box{
     display:inline-flex;
     justify-content: space-between;
-    width: 1rem 0 2rem;
+    align-items: center;
+    width: 300px;
+    margin: 1rem 0 2rem;
 }
 .info-box h5{
     font-weight: 600;
@@ -140,7 +142,8 @@ section{
     display: flex;
     justify-content: space-between;
     width: 320px;
-    height:45px
+    height:45px;
+    margin-top: 2rem;
 }
 .btn-box a.btn{
     display: inline-flex;
@@ -195,7 +198,9 @@ social-icons{
     margin-top: 8rem;
     display: flex;
     justify-content: space-between;
-    width:40px;
+    width:220px;
+    height: 40px;
+    
 
 }
 .social-icons a{
@@ -222,10 +227,32 @@ social-icons{
 .social-icons a:hover{
     color:var(--bg-color)
 }
+.social-icons a::before{
+    content: "";
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: var(--hover-color);
+    transition: .6s;
+    z-index: -1;
+}
+.social-icons a:hover::before{
+    width: 100%;
+}
+.home-image{
+    position:relative;
+}
+.img-box{
+    text-align: center;
 
-
-
-
+}
+.img-box img{
+    width:100%;
+    max-width: 350px;
+    height: auto;
+}
 
 
 
